@@ -1,0 +1,91 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #a833da;
+     background-image: url('https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+ form {
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgb(19, 130, 189);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.center-align {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#title {
+    color: rgb(234, 218, 238);
+}
+
+#description {
+    color: rgb(203, 198, 230);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: aliceblue;
+}
+
+p {
+    display: block;
+    margin-bottom: 8px;
+    color: aliceblue;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-radio {
+    margin-right: 5px;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #31eecb;
+    color: rgb(42, 12, 112);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #267bd6;
+}

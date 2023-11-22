@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1 id="title">My Survey Form</h1>
+            <p id="description">Thank you for taking the time to check my first code project in this platform</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age (optional):</label>
+                <input
+                    type="number"
+                    id="number"
+                    class="form-control"
+                    placeholder="Age"
+                    min="1"
+                    max="120"
+                />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Do you agree to my opinion that FreeCodeCamp is one of the best ways to practice by doing??</p>
+                <label>
+                    <input
+                        type="radio"
+                        name="user-recommend"
+                        value="definitely"
+                        class="input-radio"
+                        checked
+                    /> Definitely
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="user-recommend"
+                        value="maybe"
+                        class="input-radio"
+                    /> Maybe
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="user-recommend"
+                        value="not-sure"
+                        class="input-radio"
+                    /> Not sure
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite Programming Language?</p>
+                <select id="most-like" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="python">Python</option>
+                    <option value="cprograming">C programming</option>
+                    <option value="java">Java</option>
+                    <option value="swift">Swift</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+            <p>What do you think is the best learning feature of freeCodeCamp?</p>
+            <label>
+                <input
+                    type="checkbox"
+                    name="feature"
+                    value="challenges"
+                    class="input-checkbox"
+                /> Challenges
+            </label>
+            <label>
+                <input
+                    type="checkbox"
+                    name="feature"
+                    value="projects"
+                    class="input-checkbox"
+                /> Projects
+            </label>
+            <label>
+                <input
+                    type="checkbox"
+                    name="feature"
+                    value="community"
+                    class="input-checkbox"
+                /> Community
+            </label>
+            <label>
+                <input
+                    type="checkbox"
+                    name="feature"
+                    value="open-source"
+                    class="input-checkbox"
+                /> Open Source
+            </label>
+        </div>
+        <div class="form-group">
+                <p>Is there anything that you would like to let me know ?</p>
+                <textarea
+                    id="comments"
+                    class="form-control"
+                    placeholder="Enter your comments here..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="center-align">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
